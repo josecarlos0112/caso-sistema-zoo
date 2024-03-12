@@ -1,4 +1,4 @@
-package interraccionVisitantes;
+package interaccionVisitantes;
 
 // Módulo de Interacción con Visitantes
 public class VirtualGuide {
