@@ -82,7 +82,6 @@ public abstract class Animal {
     }
 
     public void setBehavior(String behavior) {
-        // Aquí puedes implementar la lógica para establecer el comportamiento del animal
         this.behavior = behavior;
         System.out.println("El comportamiento del " + this.species + " ha sido cambiado a: " + this.behavior);
     }
