@@ -12,10 +12,18 @@ public abstract class Habitat {
         this.tipo = tipo;
     }
 
-    // Métodos abstractos
+    // Método para monitorear el hábitat
     public abstract void monitorear();
 
-    public abstract void limpiar();
+    // Método para limpiar el hábitat
+    public void limpiar() {
+        if (!limpieza) {
+            System.out.println("Limpiando el hábitat de tipo " + tipo);
+            limpieza = true;
+        } else {
+            System.out.println("El hábitat de tipo " + tipo + " ya está limpio.");
+        }
+    }
 
     // Getters y setters
     public String getTipo() {

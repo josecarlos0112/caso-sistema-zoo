@@ -23,3 +23,4 @@ public class AnimalTest {
 
     // Agrega más tests según sea necesario para cubrir otros métodos y casos de uso
 }
+
