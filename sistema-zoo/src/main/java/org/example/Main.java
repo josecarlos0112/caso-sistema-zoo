@@ -24,7 +24,7 @@ public class Main {
                 loginTrabajador();
                 break;
             default:
-                System.out.println("Opción no válida.");
+                System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
         }
     }
 
@@ -49,7 +49,7 @@ public class Main {
                 mostrarOpcionesTipoTrabajador();
                 break;
             default:
-                System.out.println("Opción no válida.");
+                System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
         }
     }
 
@@ -82,7 +82,7 @@ public class Main {
                 System.out.println("\n¡Gracias por visitarnos, vuelve pronto!");
                 break;
             default:
-                System.out.println("Opción no válida.");
+                System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
         }
     }
 
@@ -147,7 +147,7 @@ public class Main {
                     mostrarMenuTrabajador("Veterinario");
                     break;
                 default:
-                    System.out.println("Opción no válida. Por favor, inténtalo de nuevo.");
+                    System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
             }
         } else {
             System.out.println("\nCredenciales incorrectas. Por favor, inténtalo de nuevo.");
@@ -155,8 +155,6 @@ public class Main {
     }
 
     private static boolean validarCredenciales(String usuario, String contrasena) {
-        // Lógica para validar las credenciales
-        // Aquí puedes implementar la validación real de usuario y contraseña
         // Por ahora, simplemente retornaremos true para cualquier entrada
         return true;
     }
@@ -198,7 +196,7 @@ public class Main {
                         System.out.println("\n¡Gracias por tu trabajo!");
                         break;
                     default:
-                        System.out.println("Opción no válida.");
+                        System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
                 }
                 break;
             case "Guardia":
@@ -228,7 +226,7 @@ public class Main {
                         System.out.println("\n¡Gracias por tu trabajo!");
                         break;
                     default:
-                        System.out.println("Opción no válida.");
+                        System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
                 }
                 break;
             case "GuiaTuristico":
@@ -237,7 +235,8 @@ public class Main {
                 System.out.println("========================================\n");
                 System.out.println("Por favor, seleccione una opción:");
                 System.out.println("1. Realizar tour guiado");
-                System.out.println("2. Salir");
+                System.out.println("2. Crear nuevo tour guiado");
+                System.out.println("3. Salir");
                 System.out.print("Ingrese su opción: ");
 
                 int opcionGuia = scanner.nextInt();
@@ -247,10 +246,13 @@ public class Main {
                         // Lógica para realizar tour guiado
                         break;
                     case 2:
+                        // Lógica para crear nuevo tour guiado
+                        break;
+                    case 3:
                         System.out.println("\n¡Gracias por tu trabajo!");
                         break;
                     default:
-                        System.out.println("Opción no válida.");
+                        System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
                 }
                 break;
             case "Veterinario":
@@ -272,7 +274,7 @@ public class Main {
                         System.out.println("\n¡Gracias por tu trabajo!");
                         break;
                     default:
-                        System.out.println("Opción no válida.");
+                        System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
                 }
                 break;
             default:
@@ -304,7 +306,7 @@ public class Main {
             // Regresar al menú principal
             mostrarMenuPrincipal();
         } else {
-            System.out.println("Opción no válida.");
+            System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
         }
     }
 

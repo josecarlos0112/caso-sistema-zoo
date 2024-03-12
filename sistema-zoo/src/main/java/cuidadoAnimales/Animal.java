@@ -25,7 +25,6 @@ public abstract class Animal {
 
     public void checkHealth() {
         // Aquí puedes implementar la lógica para verificar la salud del animal
-        // Por ejemplo, podrías tener un sistema de puntos de salud
         if (this.healthStatus.equals("Saludable")) {
             System.out.println("El " + this.species + " está saludable.");
         } else {
@@ -35,7 +34,6 @@ public abstract class Animal {
 
     public void observeBehavior() {
         // Aquí puedes implementar la lógica para observar el comportamiento del animal
-        // Por ejemplo, podrías tener diferentes comportamientos y observar cómo cambian con el tiempo
         if (this.behavior.equals("Tranquilo")) {
             System.out.println("El " + this.species + " está tranquilo.");
         } else if (this.behavior.equals("Agitado")) {
@@ -52,7 +50,6 @@ public abstract class Animal {
     }
 
     public void setSpecies(String species) {
-        // Aquí puedes implementar la lógica para establecer la especie del animal
         this.species = species;
         System.out.println("La especie del animal ha sido cambiada a: " + this.species);
     }
@@ -72,7 +69,6 @@ public abstract class Animal {
     }
 
     public void setHealthStatus(String healthStatus) {
-        // Aquí puedes implementar la lógica para establecer el estado de salud del animal
         this.healthStatus = healthStatus;
         System.out.println("El estado de salud del " + this.species + " ha sido cambiado a: " + this.healthStatus);
     }
@@ -86,6 +82,6 @@ public abstract class Animal {
         System.out.println("El comportamiento del " + this.species + " ha sido cambiado a: " + this.behavior);
     }
 
-    // Override del método mostrarInformacion() para mostrar información específica del león
+    // Override del método mostrarInformacion() para mostrar información específica del animal
     public abstract void mostrarInformacion();
 }
