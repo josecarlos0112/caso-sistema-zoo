@@ -26,5 +26,4 @@ public class GestorAlimentosTest {
         assertEquals(0, gestor.obtenerStock("Plantas")); // Verificar que el stock de plantas sea 0 (inexistente)
     }
 
-    // Agrega más tests según sea necesario para cubrir otros métodos y casos de uso
 }

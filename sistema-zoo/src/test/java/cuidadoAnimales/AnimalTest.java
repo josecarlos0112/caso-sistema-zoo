@@ -1,26 +1,37 @@
 package cuidadoAnimales;
-import cuidadoAnimales.*;
+
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class AnimalTest {
 
     @Test
     public void testFeed() {
-        Leon leon = new Leon("Carne", 3);
+        Animal animal = new AnimalImpl("Tigre", "Carne");
+        animal.feed("Carne");
     }
 
     @Test
     public void testCheckHealth() {
-        Leon leon = new Leon("Carne", 3);
-        leon.checkHealth();
+        Animal animal = new AnimalImpl("Tigre", "Carne");
+        animal.checkHealth();
     }
 
     @Test
     public void testObserveBehavior() {
-        Leon leon = new Leon("Carne", 3);
-        leon.observeBehavior();
+        Animal animal = new AnimalImpl("Tigre", "Carne");
+        animal.observeBehavior();
     }
 
-    // Agrega más tests según sea necesario para cubrir otros métodos y casos de uso
-}
+    // Clase interna para poder instanciar Animal, ya que es abstracta
+    private class AnimalImpl extends Animal {
+        public AnimalImpl(String species, String diet) {
+            super(species, diet);
+        }
 
+        @Override
+        public void mostrarInformacion() {
+            // No es necesario para las pruebas unitarias
+        }
+    }
+}
