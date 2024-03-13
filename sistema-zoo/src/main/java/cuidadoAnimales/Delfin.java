@@ -17,7 +17,7 @@ public class Delfin extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del delfín
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Delfín");
+        System.out.println("Especie: Delfín");
         System.out.println("Longitud de aleta: " + longitudAleta);
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());

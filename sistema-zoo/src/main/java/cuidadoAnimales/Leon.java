@@ -17,7 +17,7 @@ public class Leon extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del león
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: León");
+        System.out.println("Especie: León");
         System.out.println("Cantidad de melena: " + cantidadMelena);
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());

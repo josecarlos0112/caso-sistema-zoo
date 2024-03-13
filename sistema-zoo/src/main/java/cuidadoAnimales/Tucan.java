@@ -17,7 +17,7 @@ public class Tucan extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del tucán
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Tucán");
+        System.out.println("Especie: Tucán");
         System.out.println("Color del pico: " + colorPico);
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());

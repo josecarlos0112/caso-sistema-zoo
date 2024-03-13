@@ -17,7 +17,7 @@ public class Pinguino extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del pingüino
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Pingüino");
+        System.out.println("Especie: Pingüino");
         System.out.println("Longitud de aleta: " + longitudAleta);
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());

@@ -17,7 +17,7 @@ public class Cocodrilo extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del cocodrilo
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Cocodrilo");
+        System.out.println("Especie: Cocodrilo");
         System.out.println("Longitud de la cola: " + longitudCola + " cm");
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());

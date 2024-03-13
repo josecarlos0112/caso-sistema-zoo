@@ -17,7 +17,7 @@ public class Elefante extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del elefante
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Elefante");
+        System.out.println("Especie: Elefante");
         System.out.println("Longitud de trompa: " + longitudTrompa);
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());

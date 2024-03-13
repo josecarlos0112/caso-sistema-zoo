@@ -17,7 +17,7 @@ public class Mono extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del mono
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Mono");
+        System.out.println("Especie: Mono");
         System.out.println("Tipo de pelaje: " + tipoPelaje);
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());

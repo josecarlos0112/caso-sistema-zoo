@@ -4,14 +4,18 @@ package cuidadoAnimales;
 public abstract class Animal {
     private String species;
     private String diet;
-    private String healthStatus;
+    private static String healthStatus;
     private String behavior;
 
     public Animal(String species, String diet) {
         this.species = species;
         this.diet = diet;
-        this.healthStatus = "Saludable";
+        healthStatus = "Saludable";
         this.behavior = "Tranquilo";
+    }
+
+    public Animal(String nombre, String especie, int edad, double peso) {
+
     }
 
     public void feed(String food) {
@@ -64,12 +68,12 @@ public abstract class Animal {
         System.out.println("La dieta del " + this.species + " ha sido cambiada a: " + this.diet);
     }
 
-    public String getHealthStatus() {
+    public static String getHealthStatus() {
         return healthStatus;
     }
 
     public void setHealthStatus(String healthStatus) {
-        this.healthStatus = healthStatus;
+        Animal.healthStatus = "Saludable";
         System.out.println("El estado de salud del " + this.species + " ha sido cambiado a: " + this.healthStatus);
     }
 
@@ -82,6 +86,8 @@ public abstract class Animal {
         System.out.println("El comportamiento del " + this.species + " ha sido cambiado a: " + this.behavior);
     }
 
+
     // Override del método mostrarInformacion() para mostrar información específica del animal
     public abstract void mostrarInformacion();
+
 }

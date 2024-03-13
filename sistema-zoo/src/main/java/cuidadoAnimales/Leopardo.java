@@ -2,11 +2,11 @@ package cuidadoAnimales;
 
 // Clase para representar un Leopardo
 public class Leopardo extends Animal {
-    private String patrónPelaje;
+    private String patronPelaje;
 
     public Leopardo(String diet, String patrónPelaje) {
         super("Leopardo", diet);
-        this.patrónPelaje = patrónPelaje;
+        this.patronPelaje = patrónPelaje;
     }
 
     // Método específico para trepar
@@ -17,8 +17,8 @@ public class Leopardo extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del leopardo
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Leopardo");
-        System.out.println("Patrón de pelaje: " + patrónPelaje);
+        System.out.println("Especie: Leopardo");
+        System.out.println("Patrón de pelaje: " + patronPelaje);
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());
         System.out.println("Comportamiento: " + getBehavior());

@@ -17,7 +17,7 @@ public class Loro extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del loro
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Loro");
+        System.out.println("Especie: Loro");
         System.out.println("Color del plumaje: " + colorPlumaje);
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());

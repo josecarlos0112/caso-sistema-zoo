@@ -17,7 +17,7 @@ public class Hipopotamo extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del hipopótamo
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Hipopótamo");
+        System.out.println("Especie: Hipopótamo");
         System.out.println("Peso: " + peso + " kg");
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());

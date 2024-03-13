@@ -17,7 +17,7 @@ public class OsoPolar extends Animal {
     // Override del método mostrarInformacion() para mostrar información específica del oso polar
     @Override
     public void mostrarInformacion() {
-        System.out.println("Especies: Oso Polar");
+        System.out.println("Especie: Oso Polar");
         System.out.println("Longitud de patas: " + longitudPatas);
         System.out.println("Dieta: " + getDiet());
         System.out.println("Estado de salud: " + getHealthStatus());
