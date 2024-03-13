@@ -6,6 +6,7 @@ public class GestorAnimales {
         // Aquí asumimos que tienes una lista de animales disponible en algún lugar
         // Supongamos que tienes una lista llamada listaAnimales de tipo List<Animal>
         System.out.println("Lista de animales disponibles:");
+        Animal[] listaAnimales;
         for (Animal animal : listaAnimales) {
             System.out.println("ID: " + animal.getId() + " - Especie: " + animal.getSpecies());
         }

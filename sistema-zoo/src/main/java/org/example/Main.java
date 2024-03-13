@@ -28,31 +28,6 @@ public class Main {
         }
     }
 
-    private static void mostrarMenuPrincipal() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("=======================================");
-        System.out.println("¡Bienvenido al Zoológico de la UAX!");
-        System.out.println("=======================================");
-        System.out.println("¿Eres un visitante o un trabajador?");
-        System.out.println("1. Visitante");
-        System.out.println("2. Trabajador");
-        System.out.print("Ingrese su opción: ");
-
-        int opcion = scanner.nextInt();
-
-        switch (opcion) {
-            case 1:
-                mostrarOpcionesVisitante();
-                break;
-            case 2:
-                mostrarOpcionesTipoTrabajador();
-                break;
-            default:
-                System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
-        }
-    }
-
     private static void mostrarOpcionesVisitante() {
         Scanner scanner = new Scanner(System.in);
 
@@ -281,35 +256,6 @@ public class Main {
                 System.out.println("Tipo de trabajador no reconocido.");
         }
     }
-
-
-    private static void mostrarOpcionesTipoTrabajador() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("\n========================================");
-        System.out.println("Seleccione su tipo de trabajador:");
-        System.out.println("========================================\n");
-
-        for (int i = 0; i < TIPOS_TRABAJADORES.length; i++) {
-            System.out.println((i + 1) + ". " + TIPOS_TRABAJADORES[i]);
-        }
-
-        System.out.println((TIPOS_TRABAJADORES.length + 1) + ". Atrás");
-        System.out.print("Ingrese su opción: ");
-
-        int opcion = scanner.nextInt();
-
-        if (opcion >= 1 && opcion <= TIPOS_TRABAJADORES.length) {
-            // Seleccionar tipo de trabajador y mostrar menú correspondiente
-            mostrarMenuTrabajador(TIPOS_TRABAJADORES[opcion - 1]);
-        } else if (opcion == TIPOS_TRABAJADORES.length + 1) {
-            // Regresar al menú principal
-            mostrarMenuPrincipal();
-        } else {
-            System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
-        }
-    }
-
 
 
 
