@@ -198,26 +198,29 @@ public class GestorAnimales {
             }
         }
 
-
-
-
-
     //---------------VISITANTES----------------
-        public void mostrarInformacionAnimales() {
+        public static void mostrarInformacionAnimales() {
             System.out.println("\n========================================");
             System.out.println("Información sobre los animales:");
+            System.out.println("========================================\n");
+
             // Lógica para mostrar información sobre los animales
         }
 
-        public void mostrarInformacionHabitats() {
+        public static void mostrarInformacionHabitats() {
             System.out.println("\n========================================");
             System.out.println("Información sobre los hábitats:");
+            System.out.println("========================================\n");
+
+
             // Lógica para mostrar información sobre los hábitats
         }
 
-        public void mostrarToursDisponibles() {
+        public static void mostrarToursDisponibles() {
             System.out.println("\n========================================");
             System.out.println("Tours disponibles:");
+            System.out.println("========================================\n");
+
             // Lógica para mostrar los tours disponibles
         }
     }

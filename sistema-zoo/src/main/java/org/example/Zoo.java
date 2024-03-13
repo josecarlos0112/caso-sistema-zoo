@@ -53,13 +53,13 @@ public class Zoo {
 
         switch (opcion) {
             case 1:
-                gestorAnimales.mostrarInformacionAnimales();
+                GestorAnimales.mostrarInformacionAnimales();
                 break;
             case 2:
-                gestorAnimales.mostrarInformacionHabitats();
+                GestorAnimales.mostrarInformacionHabitats();
                 break;
             case 3:
-                gestorAnimales.mostrarToursDisponibles();
+                GestorAnimales.mostrarToursDisponibles();
                 break;
             case 4:
                 return;  // Volver al menú anterior
