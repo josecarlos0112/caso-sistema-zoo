@@ -15,26 +15,30 @@ El zoológico inteligente busca ser un modelo de conservación, educación y tec
 
 El objetivo del sistema de gestión es integrar diversos módulos, incluyendo el monitoreo de hábitats, el cuidado de los animales, la interacción con visitantes, la administración de recursos y el mantenimiento del zoológico. Se aplicarán conceptos como la abstracción, la herencia, el polimorfismo, entre otros, para crear un sistema robusto y flexible.
 
-## Contenido del Repositorio
+## Características principales
 
-El repositorio está organizado de la siguiente manera:
+- Gestión de Visitantes: Los visitantes pueden explorar información sobre los animales, los hábitats y los tours disponibles.
+- Gestión de Trabajadores: Los trabajadores del zoológico pueden registrar acciones como alimentar a los animales, limpiar hábitats y verificar el estado de seguridad.
+- Administración de Recursos: Los administradores pueden supervisar y administrar los recursos del zoológico, como la seguridad y el mantenimiento.
+- Interfaz de Consola: El sistema presenta una interfaz de consola intuitiva y fácil de usar para interactuar con todas las funcionalidades del zoológico.
 
-- **/src**: Contiene el código fuente del sistema de gestión.
-- **/docs**: Contiene la documentación del proyecto, incluyendo el documento de diseño y especificaciones.
-- **/demo**: Contiene archivos de demostración del sistema.
-- **/tests**: Contiene los casos de prueba utilizados para verificar el funcionamiento del sistema.
-- **/assets**: Contiene recursos adicionales, como imágenes y archivos de soporte.
+## Requisitos previos
 
-## Estructura de la Presentación
+- Java 8 o superior instalado en tu sistema.
+- Un entorno de desarrollo Java compatible, como Eclipse o IntelliJ IDEA.
 
-La presentación del proyecto sigue la siguiente estructura:
+## Instrucciones de uso
 
-1. Introducción
-2. Descripción del Proyecto
-3. Proceso de Desarrollo
-4. Demostración del Sistema
-5. Documentación y Diseño
-6. Evaluación del Proyecto
-7. Conclusiones y Recomendaciones
-8. Sesión de Preguntas y Respuestas
+1. Clona este repositorio en tu máquina local.
+2. Abre el proyecto en tu entorno de desarrollo Java.
+3. Compila y ejecuta el archivo Main.java para iniciar el zoológico virtual.
+4. Sigue las instrucciones en la consola para navegar por las diferentes opciones del zoológico.
+
+## Funcionalidades
+
+- Información sobre Animales: Obtén detalles sobre los animales presentes en el zoológico, incluyendo su especie, dieta, salud y comportamiento.
+- Información sobre Hábitats: Explora información sobre los hábitats del zoológico y las especies que los habitan.
+- Tours Disponibles: Descubre los tours disponibles que ofrece el zoológico y planifica tu visita.
+- Registro de Acciones: Los trabajadores pueden registrar acciones como alimentación de animales, limpieza de hábitats y más.
+- Seguridad y Mantenimiento: Los administradores pueden supervisar el estado de seguridad y el mantenimiento del zoológico.
 
