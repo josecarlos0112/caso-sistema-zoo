@@ -180,8 +180,8 @@ public class GestorAnimales {
 
 
             if (especie != null) {
-                System.out.println("Se ha encontrado el siguiente animal para realizar el chequeo de salud:");
-                animal.mostrarInformacion();
+                System.out.println("Se realizará el el chequeo de salud para el siguiente animal:");
+                System.out.println(especie);
                 System.out.println("Realizando chequeo de salud...");
 
                 try {
@@ -191,7 +191,8 @@ public class GestorAnimales {
                 }
 
                 System.out.println("¡Chequeo de salud completado con éxito!");
-                System.out.println("Estado de salud: " + animal.getHealthStatus());
+                Animal.setHealthStatus("Saludable");
+                System.out.println("Estado de salud: " + Animal.getHealthStatus());
             } else {
                 System.out.println("No se encontró ningún animal de la especie especificada.");
             }

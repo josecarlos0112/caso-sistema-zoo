@@ -2,13 +2,13 @@ package cuidadoAnimales;
 
 // Módulo de Cuidado de los Animales
 public abstract class Animal {
-    private String species;
+    private static String species;
     private String diet;
     private static String healthStatus;
     private String behavior;
 
     public Animal(String species, String diet) {
-        this.species = species;
+        Animal.species = species;
         this.diet = diet;
         healthStatus = "Saludable";
         this.behavior = "Tranquilo";
@@ -72,9 +72,8 @@ public abstract class Animal {
         return healthStatus;
     }
 
-    public void setHealthStatus(String healthStatus) {
+    public static void setHealthStatus(String healthStatus) {
         Animal.healthStatus = "Saludable";
-        System.out.println("El estado de salud del " + this.species + " ha sido cambiado a: " + this.healthStatus);
     }
 
     public String getBehavior() {
