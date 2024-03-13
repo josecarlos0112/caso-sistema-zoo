@@ -97,6 +97,15 @@ public class GestorAnimales {
             System.out.println("Estado de salud: Saludable");
         }
 
+    // Metodo para observar el comportamiento de los animales
+        public static void observarComportamientoAnimal() {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Ingrese la especie del animal para observar su comportamiento:");
+            String espobservada = scanner.nextLine();
+            System.out.println("Comportamiento: Tranquilo");
+        }
+
+
 
 
 

@@ -96,7 +96,7 @@ public class GestorTrabajadores {
                             GestorAnimales.mostrarEstadoSaludAnimal();
                             break;
                         case 4:
-                            // Lógica para observar comportamiento de animales
+                            GestorAnimales.observarComportamientoAnimal();
                             break;
                         case 5:
                             return;  // Volver al menú anterior
