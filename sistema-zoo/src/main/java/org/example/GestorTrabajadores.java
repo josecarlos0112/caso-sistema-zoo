@@ -117,24 +117,27 @@ public class GestorTrabajadores {
                     System.out.println("1. Registrar entrada de visitantes");
                     System.out.println("2. Registrar salida de visitantes");
                     System.out.println("3. Verificar estado de seguridad");
-                    System.out.println("4. Salir");
+                    System.out.println("4. Atras");
+                    System.out.println("5. Salir");
                     System.out.print("Ingrese su opción: ");
 
                     opcionGuardia = scanner.nextInt();
 
                     switch (opcionGuardia) {
                         case 1:
-                            // Lógica para registrar entrada de visitantes
+                            GestorAnimales.registrarEntradaVisitantes();
                             break;
                         case 2:
-                            // Lógica para registrar salida de visitantes
+                            GestorAnimales.registrarSalidaVisitantes();
                             break;
                         case 3:
-                            // Lógica para verificar estado de seguridad
+                            GestorAnimales.verificarEstadoSeguridad();
                             break;
                         case 4:
+                            return;  // Volver al menú anterior
+                        case 5:
                             System.out.println("\n¡Gracias por tu trabajo!");
-                            break;
+                            System.exit(0);  // Salir del programa
                         default:
                             System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
                     }
@@ -148,21 +151,24 @@ public class GestorTrabajadores {
                     System.out.println("Por favor, seleccione una opción:");
                     System.out.println("1. Realizar tour guiado");
                     System.out.println("2. Crear nuevo tour guiado");
-                    System.out.println("3. Salir");
+                    System.out.println("3. Atrás");
+                    System.out.println("4. Salir");
                     System.out.print("Ingrese su opción: ");
 
                     opcionGuia = scanner.nextInt();
 
                     switch (opcionGuia) {
                         case 1:
-                            // Lógica para realizar tour guiado
+                            GestorAnimales.realizarTourGuiado();
                             break;
                         case 2:
-                            // Lógica para crear nuevo tour guiado
+                            GestorAnimales.crearNuevoTourGuiado();
                             break;
                         case 3:
+                            return;  // Volver al menú anterior
+                        case 4:
                             System.out.println("\n¡Gracias por tu trabajo!");
-                            break;
+                            System.exit(0);  // Salir del programa
                         default:
                             System.out.println("Opción no válida. Por favor, vuelva a iniciar sesion.");
                     }
@@ -175,16 +181,19 @@ public class GestorTrabajadores {
                     System.out.println("========================================\n");
                     System.out.println("Por favor, seleccione una opción:");
                     System.out.println("1. Realizar chequeo de salud de animales");
-                    System.out.println("2. Salir");
+                    System.out.println("2. Atrás");
+                    System.out.println("3. Salir");
                     System.out.print("Ingrese su opción: ");
 
                     opcionVeterinario = scanner.nextInt();
 
                     switch (opcionVeterinario) {
                         case 1:
-                            // Lógica para realizar chequeo de salud de animales
+                            GestorAnimales.realizarChequeoSalud();
                             break;
                         case 2:
+                            return;  // Volver al menú anterior
+                        case 3:
                             System.out.println("\n¡Gracias por tu trabajo!");
                             break;
                         default:

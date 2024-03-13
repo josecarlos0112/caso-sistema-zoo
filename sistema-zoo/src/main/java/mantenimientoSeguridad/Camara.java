@@ -11,6 +11,10 @@ public class Camara {
         this.funcionando = true;
     }
 
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
     // Método para verificar el estado de la cámara
     public boolean verificarEstado() {
         return funcionando;

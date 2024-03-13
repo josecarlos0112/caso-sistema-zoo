@@ -1,10 +1,14 @@
 package org.example;
 
 import cuidadoAnimales.Animal;
+import mantenimientoSeguridad.*;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class GestorAnimales {
+    private static List<Camara> camaras;
+
 
     //-------------TRABAJADORES----------------
 
@@ -105,8 +109,93 @@ public class GestorAnimales {
             System.out.println("Comportamiento: Tranquilo");
         }
 
+    //Método para registrar entrada de visitantes
+        public static void registrarEntradaVisitantes() {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Ingrese el número de visitantes que entran al zoológico:");
+            int numvisitantes = scanner.nextInt();
+            System.out.println("Se han registrado " + numvisitantes + " visitantes por el día de hoy.");
+        }
+
+    //Método para registrar salida de visitantes
+        public static void registrarSalidaVisitantes() {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Ingrese el número de visitantes que salen del zoológico:");
+            int numvisitantes = scanner.nextInt();
+            System.out.println("Se ha registrado la salida de " + numvisitantes + " visitantes irse por el día de hoy.");
+        }
+
+    //Método para verificar estado de seguridad
+        public static void verificarEstadoSeguridad() {
+            Seguridad.activarSistema(); // Activar el sistema de seguridad
+            camaras = Seguridad.getCamaras();
+        }
+
+    //Método para realizar el Tour Guiado
+        public static void realizarTourGuiado() {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Por favor, ingrese los datos del tour guiado a realizar:");
+
+            System.out.print("Nombre del tour: ");
+            String nombreTour = scanner.nextLine();
+
+            System.out.print("Hora de inicio (HH:MM): ");
+            String horaInicio = scanner.nextLine();
+
+            System.out.println("\n¡Datos del tour ingresados con éxito!");
+            System.out.println("Nombre del tour: " + nombreTour);
+            System.out.println("Hora de inicio: " + horaInicio);
+        }
+    // Método para crear un Tour Guiado
+        public static void crearNuevoTourGuiado() {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Por favor, ingrese los detalles del nuevo tour a crear:");
+
+            System.out.print("Nombre del nuevo tour: ");
+            String nombreTour = scanner.nextLine();
+
+            System.out.print("Descripción del nuevo tour: ");
+            String descripcionTour = scanner.nextLine();
+
+            System.out.print("Duración del nuevo tour (en horas): ");
+            double duracionTour = scanner.nextDouble();
+
+            // Aquí puedes realizar cualquier otra lógica necesaria para el nuevo tour
+
+            System.out.println("\n¡Nuevo tour creado con éxito!");
+            System.out.println("Nombre: " + nombreTour);
+            System.out.println("Descripción: " + descripcionTour);
+            System.out.println("Duración: " + duracionTour + " horas");
+        }
+
+    //Método para realizar el chequeo de salud
+        public static void realizarChequeoSalud() {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Por favor, ingrese la especie del animal para realizar el chequeo de salud:");
+
+            String especie = scanner.nextLine();
 
 
+            if (especie != null) {
+                System.out.println("Se ha encontrado el siguiente animal para realizar el chequeo de salud:");
+                animal.mostrarInformacion();
+                System.out.println("Realizando chequeo de salud...");
+
+                try {
+                    Thread.sleep(1500); // Hacer que el hilo actual se detenga durante 1500 milisegundos
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                System.out.println("¡Chequeo de salud completado con éxito!");
+                System.out.println("Estado de salud: " + animal.getHealthStatus());
+            } else {
+                System.out.println("No se encontró ningún animal de la especie especificada.");
+            }
+        }
 
 
 
